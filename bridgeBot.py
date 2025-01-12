@@ -29,7 +29,7 @@ sepolia_address = sepolia_account.address
 # Fungsi untuk mengecek saldo di Sepolia
 def check_balance():
     balance = w3_sepolia.eth.get_balance(sepolia_address)
-    return Web3.fromWei(balance, 'ether')
+    return Web3.from_wei(balance, 'ether')
 
 # Fungsi untuk mengirimkan transaksi ke bridge
 def send_to_bridge(amount):
@@ -63,7 +63,7 @@ def send_transaction(amount):
     tx = {
         'nonce': nonce,
         'to': sepolia_address,  # Ganti dengan alamat tujuan yang sesuai
-        'value': w3_sepolia.toWei(amount, 'ether'),
+        'value': w3_sepolia.to_wei(amount, 'ether'),
         'gas': gas_limit,
         'gasPrice': gas_price,
         'chainId': sepolia_chain_id
