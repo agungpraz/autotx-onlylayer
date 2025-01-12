@@ -23,7 +23,7 @@ w3_onlylayer = Web3(Web3.HTTPProvider(onlylayer_rpc_url))
 bridge_url = 'https://only-layer-dxypre7nhx-2ded73e84a7ab687.testnets.rollbridge.app/'
 
 # Alamat wallet Sepolia dari private key
-sepolia_account = w3_sepolia.eth.account.privateKeyToAccount(sepolia_private_key)
+sepolia_account = w3_sepolia.eth.account.from_key(sepolia_private_key)
 sepolia_address = sepolia_account.address
 
 # Fungsi untuk mengecek saldo di Sepolia
