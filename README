@@ -1,0 +1,4 @@
+pip install web3 requests python-dotenv
+pip install web3 requests
+jalankan
+python3 bridgeBot.py
