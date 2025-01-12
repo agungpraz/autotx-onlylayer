@@ -10,7 +10,7 @@ load_dotenv()
 sepolia_private_key = os.getenv("PRIVATE_KEY")
 
 # Setup jaringan Ethereum Sepolia
-sepolia_rpc_url = 'https://eth-sepolia.g.alchemy.com/v2/c-YpqcinjKThEc-N2VqUy3LeQEfh8D2e'  # Ganti dengan RPC Sepolia Anda
+sepolia_rpc_url = 'https://1rpc.io/sepolia'  # Ganti dengan RPC Sepolia Anda
 sepolia_chain_id = 11155111  # Sepolia Chain ID
 w3_sepolia = Web3(Web3.HTTPProvider(sepolia_rpc_url))
 
